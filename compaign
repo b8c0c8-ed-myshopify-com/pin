@@ -1,0 +1,56 @@
+Campaign.create(
+    ad_account_id="123456",
+    name="SDK Test Campaign",
+    objective_type="AWARENESS",
+    daily_spend_cap=10,
+AD_ACCOUNT_ID = "123456"
+CAMPAIGN_ID = "22334455"
+
+ad_group = AdGroup.create(
+    ad_account_id=AD_ACCOUNT_ID,
+    campaign_id=CAMPAIGN_ID,
+    billable_event="IMPRESSION",
+    name="My first adgroup from SDK",
+https://developers.pinterest.com/docs/developer-tools/sdk/#create-an-adAD_ACCOUNT_ID = "12345"
+AD_GROUP_ID = "3333444"
+PIN_ID = "44445555"
+
+ad = Ad.create(
+    ad_account_id=AD_ACCOUNT_ID,
+    ad_group_id=AD_GROUP_ID,
+    creative_type="REGULAR",
+    pin_id=PIN_ID,
+    name="My SDK AD",
+    status="ACTIVE",
+)from pinterest.ads.customer_lists impofrom pinterest.ads.keywords import Keyword
+
+AD_ACCOUNT_ID = "12345"
+AD_GROUP_ID = "22334455"
+
+keyword = Keyword.create(
+    ad_account_id=AD_ACCOUNT_ID,
+    parent_id=AD_GROUP_ID,
+    value="baby shoes",
+    match_type="BROAD",
+    bid=1000,rt CustomerList
+
+AD_ACCOUNT_ID = "12345"
+
+customer_list = CustomerList.create(
+    ad_account_id=AD_ACCOUNT_ID,
+    name="SDK Test Customer List",
+    records="test@pinterest.com,test@example.com",
+    list_type="EMAIL",
+)from pinterest.ads.audiences import Audience
+
+AD_ACCOUNT_ID = "12345"
+
+audience = Audience.create(
+    ad_account_id=AD_ACCOUNT_ID,
+    name="SDK Test Audience",
+    rule=dict(
+        engager_type=1
+    ),
+    audience_type="ENGAGEMENT",
+    description="SDK Test Audience Description",
+)
